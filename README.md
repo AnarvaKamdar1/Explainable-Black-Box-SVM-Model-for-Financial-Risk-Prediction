@@ -6,12 +6,13 @@ The project focuses on balancing predictive power through non-linear modeling wi
 ## Project Overview
 Financial institutions face significant challenges in managing credit exposure. This project addresses those risks by:
 
-+ Predictive Modeling: Utilizing a Support Vector Machine (SVM) with a Radial Basis Function (RBF) kernel to identify potential defaults among 30,000 credit card clients.
-+ Granular Interpretability: Implementing a custom-built SHAP (SHapley Additive exPlanations) framework from scratch to provide local explanations for "black-box" model outputs.
++ **Predictive Modeling:** Utilizing a Support Vector Machine (SVM) with a Radial Basis Function (RBF) kernel to identify potential defaults among 30,000 credit card clients.
++ **Granular Interpretability:** Implementing a custom-built SHAP (SHapley Additive exPlanations) framework from scratch to provide local explanations for "black-box" model outputs.
 
 ## Key Features
 
-+ High-Precision Classification:
++ **High-Precision Classification:**
+
 Engineered an RBF-SVM model to capture complex, non-linear relationships within historical financial data, achieving an overall accuracy of 82%.
 
 + Custom Explainability Engine: Developed a manual implementation of the Shapley value formula to decompose individual predictions into feature-specific contributions.

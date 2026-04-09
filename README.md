@@ -11,28 +11,20 @@ Financial institutions face significant challenges in managing credit exposure. 
 
 ## Key Features
 
-**High-Precision Classification:**
+1. **High-Precision Classification:** Engineered an RBF-SVM model to capture complex, non-linear relationships within historical financial data, achieving an overall accuracy of 82%.
 
-Engineered an RBF-SVM model to capture complex, non-linear relationships within historical financial data, achieving an overall accuracy of 82%.
+2. **Custom Explainability Engine:** Developed a manual implementation of the Shapley value formula to decompose individual predictions into feature-specific contributions.
 
-**Custom Explainability Engine:**
+3. **Risk Driver Identification:** Successfully mapped the top influential features—such as payment history ($X6$) and credit limit ($X1$)—to individual risk scores, enabling stakeholders to understand the "why" behind every prediction.
 
-Developed a manual implementation of the Shapley value formula to decompose individual predictions into feature-specific contributions.
-
-**Risk Driver Identification:**
-
-Successfully mapped the top influential features—such as payment history ($X6$) and credit limit ($X1$)—to individual risk scores, enabling stakeholders to understand the "why" behind every prediction.
-
-**Memory-Efficient Computation:**
-
-Designed a 2D/3D slicing pattern for coalition storage to overcome environment memory limitations when calculating exact Shapley values for a subset of features.
+4. **Memory-Efficient Computation:** Designed a 2D/3D slicing pattern for coalition storage to overcome environment memory limitations when calculating exact Shapley values for a subset of features.
 
 ## Dataset & Preprocessing
 The model utilizes the UCI Credit Card Default dataset, featuring 30,000 instances and 23 features.
 
-+ **Categorical Encoding:** Implemented one-hot encoding for features like education, gender, and repayment status.
-+ **Feature Scaling:** Applied MinMaxScaler to normalize numerical data (e.g., age, bill amounts) for optimal SVM performance.
-+ **Class Imbalance Handling:** Utilized stratified sampling to maintain class proportions across a 70/30 train-test split.
+1. **Categorical Encoding:** Implemented one-hot encoding for features like education, gender, and repayment status.
+2. **Feature Scaling:** Applied MinMaxScaler to normalize numerical data (e.g., age, bill amounts) for optimal SVM performance.
+3. **Class Imbalance Handling:** Utilized stratified sampling to maintain class proportions across a 70/30 train-test split.
 
 ## Technical Stack/Language: 
 
